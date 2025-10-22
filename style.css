@@ -17,7 +17,6 @@ body {
   line-height: 1.6;
 }
 
-/* ===== HEADER ===== */
 .top-bar {
   background: var(--blue);
   color: white;
@@ -27,13 +26,11 @@ body {
   font-size: 1.4rem;
 }
 
-/* ===== NAVBAR ===== */
 .tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  /* border-bottom: 2px solid var(--blue); */ /* removed the blue line */
   padding: 0.6rem 2rem;
 }
 .left-links, .right-links {
@@ -50,7 +47,6 @@ body {
   color: var(--purple);
 }
 
-/* ===== TAGLINE ===== */
 .tagline {
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -60,13 +56,11 @@ body {
   margin: 1rem 0;
 }
 
-/* ===== MAIN CONTENT ===== */
 main {
   min-height: 80vh;
   padding: 1rem;
 }
 
-/* ===== TAB CONTENT ===== */
 .tab-content {
   display: none;
   animation: fadeIn 0.5s ease-in-out;
@@ -84,7 +78,6 @@ main {
   to {opacity: 1;}
 }
 
-/* ===== BACKGROUND IMAGES (replace each as needed) ===== */
 #home {
   background-image: url('images/BG.jpg');
 }
@@ -113,7 +106,6 @@ main {
   border-radius: 10px;
 }
 
-/* ===== CONTENT INSIDE EACH TAB ===== */
 .content-box,
 .products,
 .contact-container {
@@ -121,17 +113,15 @@ main {
   z-index: 1;
 }
 
-/* ===== SECTION TITLES ===== */
 .tab-content h3 {
-  font-size: 2.2rem;   /* Bigger titles */
-  color: black;        /* Black color */
-  text-align: left;    /* Align to the left */
+  font-size: 2.2rem;   
+  color: black;       
+  text-align: left;   
   margin-bottom: 1.5rem;
   font-weight: 700;
-  margin-left: 2rem;   /* Add left spacing */
+  margin-left: 2rem;   
 }
 
-/* ===== HOME CONTENT ===== */
 #home .content-box {
   max-width: 1000px;
   margin: auto;
@@ -159,7 +149,7 @@ main {
   box-shadow: var(--shadow);
 }
 
-/* ===== SHOP CONTENT ===== */
+
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -173,7 +163,7 @@ main {
   box-shadow: var(--shadow);
   padding: 1rem;
   width: 220px;
-  text-align: center; /* Centers the button */
+  text-align: center;
 }
 .product-card img {
   width: 100%;
@@ -193,7 +183,6 @@ main {
   background: var(--purple);
 }
 
-/* ===== CONTACT CONTENT ===== */
 .contact-container {
   display: flex;
   justify-content: space-around;
@@ -249,7 +238,6 @@ button[type="submit"]:hover {
   margin-right: 0.5rem;
 }
 
-/* ===== FOOTER ===== */
 footer {
   background: var(--blue);
   color: white;
@@ -259,7 +247,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .tabs {
     flex-direction: column;
@@ -274,3 +261,4 @@ footer {
     width: 100%;
   }
 }
+
