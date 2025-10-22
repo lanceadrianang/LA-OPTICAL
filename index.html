@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LA OPTICAL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="top-bar">
+      <h1>LA OPTICAL</h1>
+    </div>
+
+    <nav class="tabs">
+      <div class="left-links">
+        <a href="#home" class="tab active" onclick="showTab(event, 'home')">Home</a>
+        <a href="#contact" class="tab" onclick="showTab(event, 'contact')">Contact us</a>
+      </div>
+      <div class="right-links">
+        <a href="#shop" class="tab" onclick="showTab(event, 'shop')">Shop now!</a>
+      </div>
+    </nav>
+
+    <div class="tagline">
+      <h2>eyewear for all!</h2>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- HOME TAB -->
+    <section id="home" class="tab-content active">
+      <h3>About us</h3>
+      <div class="content-box">
+        <div class="text-box left">
+          <p>
+            Welcome to <b>LA OPTICAL</b>, your trusted destination for stylish,
+            affordable, and high-quality eyewear. We believe that glasses are
+            more than just a necessity; they’re a reflection of your personality
+            and lifestyle.
+          </p>
+        </div>
+
+        <div class="photo-row">
+          <img src="images/M1.jpg">
+          <img src="images/M2.jpg">
+        </div>
+
+        <div class="text-box right">
+          <p>
+            Our mission is to provide a wide selection of frames, lenses, and
+            sunglasses that combine comfort, durability, and modern design.
+            Whether you’re looking for everyday essentials or a bold fashion
+            statement, <b>LA OPTICAL</b> has something for everyone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP TAB -->
+    <section id="shop" class="tab-content">
+      <h3>Products</h3>
+      <div class="products">
+        <div class="product-card">
+          <img src="images/P1.jpg">
+          <button>Buy now!</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/p2.jpg">
+          <button>Buy now!</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/p3.jpg">
+          <button>Buy now!</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT TAB -->
+    <section id="contact" class="tab-content">
+      <h3>Contact us</h3>
+      <div class="contact-container">
+        <div class="contact-text">
+          <p>
+            We'd love to hear from you! Whether you have questions about our
+            eyewear, need help with your order, or just want to say hello —
+            feel free to reach out.
+          </p>
+
+          <p class="social">You can also reach us here:</p>
+          <div class="social-icons">
+            <img src="images/fb.jpg">
+            <img src="images/ig.jpg">
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Your email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 LA OPTICAL — See It. Wear It. Love It.</p>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    // TAB SWITCH FUNCTION
+    function showTab(event, tabId) {
+      event.preventDefault();
+      document.querySelectorAll('.tab-content').forEach(sec => sec.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
